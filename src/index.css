@@ -3,7 +3,17 @@ body {
     margin: 20px;
 }
 
+.month-row {
+    justify-content: space-between;
+}
+
 .month-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.days-heading-row:after {
     clear: both;
     content: "";
     display: table;
@@ -17,26 +27,22 @@ body {
     background: #fff;
     border: 1px solid #999;
     float: left;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 50px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 50px;
-  }
+}
   
-  .square:focus {
-    outline: none;
-  }
+.day:focus {
+outline: none;
+}
 
-  .app {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .app-info {
-    margin-left: 20px;
-  }
+.day-name {
+float: left;
+border: 1px solid #999;
+}
+
+.app {
+display: flex;
+flex-direction: row;
+}
+
+.app-info {
+margin-left: 20px;
+}
